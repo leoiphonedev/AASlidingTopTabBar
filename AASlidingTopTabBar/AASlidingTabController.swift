@@ -13,20 +13,20 @@ public protocol AASlidingTabControllerDelegate {
 
 public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
-    var delegate:AASlidingTabControllerDelegate?
-    var viewControllerArray = [UIViewController]()
-    var tabBackgroundColor = UIColor.white
-    var indicatorTintColor = UIColor(red: 67.0/255.0, green: 189.0/255.0, blue: 234.0/255.0, alpha: 1.0)
-    var indicatorHeight = 5.0
+    public var delegate:AASlidingTabControllerDelegate?
+   public var viewControllerArray = [UIViewController]()
+    public var tabBackgroundColor = UIColor.white
+    public var indicatorTintColor = UIColor(red: 67.0/255.0, green: 189.0/255.0, blue: 234.0/255.0, alpha: 1.0)
+    public var indicatorHeight = 5.0
     
-    var selectedTabTitleColor = UIColor.white
-    var unSelectedTabTitleColor = UIColor.gray
+    public var selectedTabTitleColor = UIColor.white
+    public var unSelectedTabTitleColor = UIColor.gray
     
-    var selecedTabTitleFont  = UIFont(name: "verdana", size: 14.0)
-    var unSelecedTabTitleFont  = UIFont(name: "verdana", size: 14.0)
+    public var selecedTabTitleFont  = UIFont(name: "verdana", size: 14.0)
+    public var unSelecedTabTitleFont  = UIFont(name: "verdana", size: 14.0)
     
-    var initialSelectedTabIndex:Int = 0
-    var titleLetterSpacing = 0.0
+    public var initialSelectedTabIndex:Int = 0
+    public var titleLetterSpacing = 0.0
     
     fileprivate var previousPage:Int = 0
     fileprivate var buttonPreviousPage:Int = 0
@@ -93,7 +93,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         self.view.frame = frame
     }
     
-    func initWithViewController(controllers: [UIViewController], parentViewController: UIViewController, forHeight height:CGFloat) {
+   public func initWithViewController(controllers: [UIViewController], parentViewController: UIViewController, forHeight height:CGFloat) {
         topNavHeight = Double(height)
         setFrameOfSlidingTabVC(parentVC: parentViewController)
         scroll.backgroundColor = tabBackgroundColor
