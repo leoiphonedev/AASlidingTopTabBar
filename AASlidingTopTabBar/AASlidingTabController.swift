@@ -5,7 +5,6 @@
 //  Created by Aman Aggarwal on 2/22/17.
 //  Copyright © 2017 ClickApps. All rights reserved.
 //
-
 import UIKit
 
 public protocol AASlidingTabControllerDelegate {
