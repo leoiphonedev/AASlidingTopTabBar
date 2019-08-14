@@ -11,7 +11,7 @@ public protocol AASlidingTabControllerDelegate {
     func currentSelectedIndex(_ index: Int)
 }
 
-class AASlidingTabController: UIViewController, UIScrollViewDelegate {
+final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
     var delegate:AASlidingTabControllerDelegate?
     var viewControllerArray = [UIViewController]()

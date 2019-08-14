@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
 s.name             = 'AASlidingTopTabBar'
 s.version          = '0.1.0'
 s.summary          = 'TabBar with tab on top written in swift.'
+s.swift_version =  '5.0'
 
 s.description      = <<-DESC
 AASlidingTopTabBar allows you to pass viewcontroller in an array and it will arrange al your viewcontrollers as a tab bar with tab on top. USer can chaneg tab either tapping on menu of tab, or slide. AASlidigTopTabBar is similar to android tab bar.
