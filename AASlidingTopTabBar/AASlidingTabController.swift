@@ -11,7 +11,7 @@ public protocol AASlidingTabControllerDelegate {
     func currentSelectedIndex(_ index: Int)
 }
 
-final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
+public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
     var delegate:AASlidingTabControllerDelegate?
     var viewControllerArray = [UIViewController]()
@@ -38,7 +38,7 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     fileprivate var width = 150.0
    
     
-    override func viewDidAppear(_ animated: Bool) {
+   public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
     
@@ -52,7 +52,7 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         controllerContainerscroll.isScrollEnabled = true
     }
     
-    override func viewDidLoad() {
+   public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
@@ -69,12 +69,12 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         NotificationCenter.default.removeObserver(self)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(textBeginNotification(_:)), name:UITextField.textDidBeginEditingNotification , object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(textEndNotification(_:)), name:UITextField.textDidEndEditingNotification , object: nil)
@@ -256,7 +256,7 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         controllerContainerscroll.delegate = self
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offset =  scrollView.contentOffset.x/(scrollView.contentSize.width/scroll.contentSize.width)
         if  offset > 0.0 {
@@ -267,7 +267,7 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         }
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let offset =  scrollView.contentOffset.x/(scrollView.contentSize.width/scroll.contentSize.width)
         scroll.scrollRectToVisible(CGRect(x: Double(offset), y: 0.0, width: width, height: topNavHeight - 5.0), animated: true)
         setTittleSelected(for: Int(CGFloat(offset)/CGFloat(width)))
@@ -308,7 +308,7 @@ final class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
