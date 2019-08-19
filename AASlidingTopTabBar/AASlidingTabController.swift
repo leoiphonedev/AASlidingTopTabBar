@@ -202,6 +202,8 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
                 }
             }
         }
+        setTittleSelected(for: sender.tag)
+        setViewControllerAsChildVCForIndex(index: sender.tag)
         if indicatorView.frame.origin.x == frame.origin.x {
             return
         }
@@ -212,8 +214,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         controllerContainerscroll.delegate = nil
         controllerContainerscroll.scrollRectToVisible(CGRect(x: CGFloat(org), y: 0.0, width: UIScreen.main.bounds.size.width, height: controllerContainerscroll.frame.size.height), animated: true)
         self.perform(#selector(setDelegatesToContainerScroll), with: nil, afterDelay: 0.3)
-        setTittleSelected(for: sender.tag)
-        setViewControllerAsChildVCForIndex(index: sender.tag)
+      
         if let dlg = self.delegate {
             dlg.currentSelectedIndex(sender.tag)
         }

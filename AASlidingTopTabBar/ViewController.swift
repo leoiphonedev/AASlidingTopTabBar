@@ -45,6 +45,7 @@ class ViewController: UIViewController,AASlidingTabControllerDelegate {
         vc.indicatorHeight = 5.0
         vc.selectedTabTitleColor = UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 1.0)
         vc.unSelectedTabTitleColor =   UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 0.6)
+        vc.tabBackgroundColor = .red
         vc.titleLetterSpacing = 1.0
         vc.initialSelectedTabIndex = 1
         vc.initWithViewController(controllers: controllerArray, parentViewController: self, forHeight: 40.0)
