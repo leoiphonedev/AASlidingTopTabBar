@@ -1,7 +1,79 @@
 # AASlidingTopTabBar
 
 
-#The MIT License (MIT)
+![AASlidingTopTabBar first tab selected] (https://imgur.com/SyPGxld)  
+![AASlidingTopTabBar tab transitions] (https://imgur.com/rjQ6im7)  
+![AASlidingTopTabBar third tab selected] (https://imgur.com/yUeAyOO)
+
+![Demo of AASlidingTopTabBar] (https://imgur.com/J5fXJp7)  
+
+AASlidingTopTabBar allows you to create a UITabBar with tabs on top of screen like android tab controller. AASlidingTopTabBar is purely written in swift and has following features.
+
+<b>Features:</b> 
+1) Highly customizable.
+2) Installation using pod
+
+<b>How to use:</b> 
+
+
+In your ViewController.swift where you want to add tab bar, please add below code 
+
+```
+class ViewController: UIViewController,AASlidingTabControllerDelegate {
+    
+    var controllerArray = [UIViewController]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        createTabController()
+    }
+    
+    func createTabController() {
+        
+        let pendingEventsVC = self.storyboard?.instantiateViewController(withIdentifier: "PendingEventsVC") as! PendingEventsVC
+        pendingEventsVC.title = "Pending Events"
+        
+        let completedEventsVC = self.storyboard?.instantiateViewController(withIdentifier: "CompletedEventsVC") as! CompletedEventsVC
+        completedEventsVC.title = "Completed Events"
+        
+        let cancelledEventsVC = self.storyboard?.instantiateViewController(withIdentifier: "CancelledEventsVC") as! CancelledEventsVC
+        cancelledEventsVC.title = "Cancelled Events"
+        
+        
+        controllerArray.append(pendingEventsVC)
+        controllerArray.append(completedEventsVC)
+        controllerArray.append(cancelledEventsVC)
+        
+        
+        let vc = AASlidingTabController()
+        vc.delegate = self
+        vc.indicatorTintColor = UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 1.0)
+        vc.indicatorHeight = 5.0
+        vc.selectedTabTitleColor = UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 1.0)
+        vc.unSelectedTabTitleColor =   UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 0.6)
+        vc.titleLetterSpacing = 1.0
+        vc.initialSelectedTabIndex = 1
+        vc.initWithViewController(controllers: controllerArray, parentViewController: self, forHeight: 40.0)
+        self.view.addSubview(vc.view)
+    }
+  }
+```
+
+<b>Get notified when a tab has been changed by user:</b> 
+
+```
+ //MARK:- AASlidingTabBarControllerDelegate
+    func currentSelectedIndex(_ index: Int) {
+        print("Selcted tab index = \(index)")
+    }
+```
+
+# The MIT License (MIT)
 
 Copyright (c) 2019-present Aman Aggarwal
 
