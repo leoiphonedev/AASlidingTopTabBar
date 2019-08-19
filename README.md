@@ -9,11 +9,11 @@
 
 AASlidingTopTabBar allows you to create a UITabBar with tabs on top of screen like android tab controller. AASlidingTopTabBar is purely written in swift and has following features.
 
-<b>Features:</b> 
+# Features:
 1) Highly customizable.
 2) Installation using pod
 
-<b>How to use:</b> 
+# How to use 
 
 
 In your ViewController.swift where you want to add tab bar, please add below code 
