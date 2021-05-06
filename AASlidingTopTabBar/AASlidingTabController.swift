@@ -15,6 +15,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
     public var delegate:AASlidingTabControllerDelegate?
     public var isScrollEnabled = true
+    public var isSafeAreaRequired = true
    public var viewControllerArray = [UIViewController]()
     public var tabBackgroundColor = UIColor.white
     public var indicatorTintColor = UIColor(red: 67.0/255.0, green: 189.0/255.0, blue: 234.0/255.0, alpha: 1.0)
@@ -86,9 +87,11 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         var frame = parentVC.view.frame
         var topSafeOffset:CGFloat = 0.0
         var bottomSafeOffset:CGFloat = 0.0
-        if #available(iOS 11.0, *) {
-            topSafeOffset = parentVC.view.safeAreaInsets.top
-            bottomSafeOffset = parentVC.view.safeAreaInsets.bottom
+        if self.isSafeAreaRequired {
+            if #available(iOS 11.0, *) {
+                topSafeOffset = parentVC.view.safeAreaInsets.top
+                bottomSafeOffset = parentVC.view.safeAreaInsets.bottom
+            }
         }
         frame.origin.y = topSafeOffset
         frame.size.height = UIScreen.main.bounds.size.height - (frame.origin.y + bottomSafeOffset )
@@ -135,7 +138,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         scroll.frame = CGRect(x: 0.0, y: 0.0, width: Double(UIScreen.main.bounds.size.width), height: topNavHeight)
         
         
-        if viewControllerArray.count < 3 {
+        if viewControllerArray.count <= 3 {
             width  = Double(UIScreen.main.bounds.size.width/CGFloat(viewControllerArray.count))
         }
         for  i  in 0...viewControllerArray.count-1 {
