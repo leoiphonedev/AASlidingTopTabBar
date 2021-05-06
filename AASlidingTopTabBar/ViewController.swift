@@ -40,6 +40,7 @@ class ViewController: UIViewController,AASlidingTabControllerDelegate {
         
         
         let vc = AASlidingTabController()
+        vc.isScrollEnabled = false
         vc.delegate = self
         vc.indicatorTintColor = UIColor(red: 169.0/255.0, green: 1.0/255.0, blue: 25.0/255.0, alpha: 1.0)
         vc.indicatorHeight = 5.0

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'AASlidingTopTabBar'
-s.version          = '0.1.2'
+s.version          = '0.2'
 s.summary          = 'TabBar with tab on top written in swift.'
 s.swift_version =  '5.0'
 

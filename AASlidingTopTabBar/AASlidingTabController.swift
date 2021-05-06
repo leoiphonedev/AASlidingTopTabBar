@@ -14,6 +14,7 @@ public protocol AASlidingTabControllerDelegate {
 public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
     public var delegate:AASlidingTabControllerDelegate?
+    public var isScrollEnabled = true
    public var viewControllerArray = [UIViewController]()
     public var tabBackgroundColor = UIColor.white
     public var indicatorTintColor = UIColor(red: 67.0/255.0, green: 189.0/255.0, blue: 234.0/255.0, alpha: 1.0)
@@ -65,6 +66,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         controllerContainerscroll = UIScrollView()
         controllerContainerscroll.isPagingEnabled = true
         controllerContainerscroll.showsHorizontalScrollIndicator = false
+        controllerContainerscroll.isScrollEnabled = self.isScrollEnabled
         self.view.addSubview(controllerContainerscroll)
         
     }
@@ -192,6 +194,7 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
     
     @objc fileprivate func clickedTabIndex(_ sender: UIButton) {
         
+        self.controllerContainerscroll.isScrollEnabled = true
         var frame = sender.frame
         for bt in scroll.subviews {
             if bt is UIButton {
@@ -220,6 +223,8 @@ public class AASlidingTabController: UIViewController, UIScrollViewDelegate {
         }
         
         checkAndScrollMenuToVisibleOtherElements(index: sender.tag)
+        
+        self.controllerContainerscroll.isScrollEnabled = self.isScrollEnabled
     }
     
     
