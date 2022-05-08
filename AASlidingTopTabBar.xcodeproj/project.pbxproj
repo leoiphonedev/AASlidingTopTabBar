@@ -12,7 +12,6 @@
 		DC64AE2D2303FD2300B7F289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC64AE2B2303FD2300B7F289 /* Main.storyboard */; };
 		DC64AE2F2303FD2400B7F289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC64AE2E2303FD2400B7F289 /* Assets.xcassets */; };
 		DC64AE322303FD2400B7F289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC64AE302303FD2400B7F289 /* LaunchScreen.storyboard */; };
-		DC64AE3A2303FD5100B7F289 /* AASlidingTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE392303FD5100B7F289 /* AASlidingTabController.swift */; };
 		DC64AE472303FDB400B7F289 /* CompletedEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE422303FDB400B7F289 /* CompletedEventsVC.swift */; };
 		DC64AE482303FDB400B7F289 /* PendingEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */; };
 		DC64AE492303FDB400B7F289 /* CancelledEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */; };
@@ -26,11 +25,10 @@
 		DC64AE2E2303FD2400B7F289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC64AE312303FD2400B7F289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC64AE332303FD2400B7F289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC64AE392303FD5100B7F289 /* AASlidingTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASlidingTabController.swift; sourceTree = "<group>"; };
 		DC64AE422303FDB400B7F289 /* CompletedEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledEventsVC.swift; sourceTree = "<group>"; };
-		DCE349672827A13900648D4A /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyLibrary; sourceTree = "<group>"; };
+		DC717EA02827A32800BBBD7F /* AASlidingTopTabBarPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AASlidingTopTabBarPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +45,7 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
-				DCE349672827A13900648D4A /* MyLibrary */,
+				DC717EA02827A32800BBBD7F /* AASlidingTopTabBarPackage */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
 			);
@@ -67,7 +65,6 @@
 				DC64AE452303FDB400B7F289 /* CancelledEventsVC */,
 				DC64AE412303FDB400B7F289 /* CompletedEventsVC */,
 				DC64AE432303FDB400B7F289 /* PendingEventsVC */,
-				DC64AE392303FD5100B7F289 /* AASlidingTabController.swift */,
 				DC64AE272303FD2300B7F289 /* AppDelegate.swift */,
 				DC64AE292303FD2300B7F289 /* ViewController.swift */,
 				DC64AE2B2303FD2300B7F289 /* Main.storyboard */,
@@ -173,7 +170,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC64AE3A2303FD5100B7F289 /* AASlidingTabController.swift in Sources */,
 				DC64AE472303FDB400B7F289 /* CompletedEventsVC.swift in Sources */,
 				DC64AE2A2303FD2300B7F289 /* ViewController.swift in Sources */,
 				DC64AE282303FD2300B7F289 /* AppDelegate.swift in Sources */,
