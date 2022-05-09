@@ -18,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC4643322828E79700D05F58 /* Package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Package; sourceTree = "<group>"; };
 		DC64AE242303FD2300B7F289 /* AASlidingTopTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AASlidingTopTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC64AE272303FD2300B7F289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC64AE292303FD2300B7F289 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +28,8 @@
 		DC64AE422303FDB400B7F289 /* CompletedEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledEventsVC.swift; sourceTree = "<group>"; };
+		DCE461622829385C00340625 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		DCE461642829389E00340625 /* AASlidingTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AASlidingTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +46,8 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
-				DC4643322828E79700D05F58 /* Package */,
+				DCE461622829385C00340625 /* Package.swift */,
+				DCE461632829388F00340625 /* Source */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
 			);
@@ -97,6 +99,14 @@
 				DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */,
 			);
 			path = CancelledEventsVC;
+			sourceTree = "<group>";
+		};
+		DCE461632829388F00340625 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCE461642829389E00340625 /* AASlidingTabController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
