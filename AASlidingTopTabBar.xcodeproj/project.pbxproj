@@ -15,6 +15,7 @@
 		DC64AE472303FDB400B7F289 /* CompletedEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE422303FDB400B7F289 /* CompletedEventsVC.swift */; };
 		DC64AE482303FDB400B7F289 /* PendingEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */; };
 		DC64AE492303FDB400B7F289 /* CancelledEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */; };
+		DCE2570C2828C7F600CC8051 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE2570B2828C7F600CC8051 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledEventsVC.swift; sourceTree = "<group>"; };
 		DCE2570A2828C72F00CC8051 /* AASlidingTopTabBarPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AASlidingTopTabBarPackage; sourceTree = "<group>"; };
+		DCE2570B2828C7F600CC8051 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
+				DCE2570B2828C7F600CC8051 /* Package.swift */,
 				DCE2570A2828C72F00CC8051 /* AASlidingTopTabBarPackage */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE2570C2828C7F600CC8051 /* Package.swift in Sources */,
 				DC64AE472303FDB400B7F289 /* CompletedEventsVC.swift in Sources */,
 				DC64AE2A2303FD2300B7F289 /* ViewController.swift in Sources */,
 				DC64AE282303FD2300B7F289 /* AppDelegate.swift in Sources */,
