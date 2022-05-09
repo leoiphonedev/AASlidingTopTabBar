@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC46432F2828E4BC00D05F58 /* Package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Package; path = "../../../Shared/Previously Relocated Items/Security/AmanHD/Source Codes/Pods/AASlidingTopTabBar/AASlidingTopTabBar/Package"; sourceTree = "<group>"; };
+		DC4643322828E79700D05F58 /* Package */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Package; sourceTree = "<group>"; };
 		DC64AE242303FD2300B7F289 /* AASlidingTopTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AASlidingTopTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC64AE272303FD2300B7F289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC64AE292303FD2300B7F289 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
-				DC46432F2828E4BC00D05F58 /* Package */,
+				DC4643322828E79700D05F58 /* Package */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
 			);
