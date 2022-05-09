@@ -28,7 +28,7 @@
 		DC64AE422303FDB400B7F289 /* CompletedEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledEventsVC.swift; sourceTree = "<group>"; };
-		DC717EA02827A32800BBBD7F /* AASlidingTopTabBarPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AASlidingTopTabBarPackage; sourceTree = "<group>"; };
+		DCE257022828C16900CC8051 /* AASlidingTopTabBar */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AASlidingTopTabBar; path = ../../../Personal_Projects/ElementaryKids/AASlidingTopTabBar; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
-				DC717EA02827A32800BBBD7F /* AASlidingTopTabBarPackage */,
+				DCE257022828C16900CC8051 /* AASlidingTopTabBar */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
 			);
