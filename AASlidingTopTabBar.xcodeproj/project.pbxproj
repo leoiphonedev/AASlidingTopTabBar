@@ -29,6 +29,7 @@
 		DC64AE442303FDB400B7F289 /* PendingEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingEventsVC.swift; sourceTree = "<group>"; };
 		DC64AE462303FDB400B7F289 /* CancelledEventsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledEventsVC.swift; sourceTree = "<group>"; };
 		DCE257022828C16900CC8051 /* AASlidingTopTabBar */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AASlidingTopTabBar; path = ../../../Personal_Projects/ElementaryKids/AASlidingTopTabBar; sourceTree = "<group>"; };
+		DCE257032828C27000CC8051 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		DC64AE1B2303FD2300B7F289 = {
 			isa = PBXGroup;
 			children = (
+				DCE257032828C27000CC8051 /* Package.swift */,
 				DCE257022828C16900CC8051 /* AASlidingTopTabBar */,
 				DC64AE262303FD2300B7F289 /* AASlidingTopTabBar */,
 				DC64AE252303FD2300B7F289 /* Products */,
